@@ -1,0 +1,7 @@
+.moneyContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 2rem;
+  font-weight: bold;
+}

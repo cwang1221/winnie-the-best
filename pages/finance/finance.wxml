@@ -1,0 +1,10 @@
+<view>
+  <view class="moneyContainer">
+    <view>余额：</view>
+    <view class="{{money > 0 ? 'positive' : 'negative'}}">{{money}}</view>
+  </view>
+  
+  <t-cell wx:for="{{history}}" title="{{item.date}} {{item.title}}" description="{{item.description}}" note="{{(item.type==='INCOME' ? '+' : '-') + item.money}}">
+    <t-icon name="{{item.type === 'INCOME' ? 'caret-up' : 'caret-down'}}" slot="left-icon" color="{{item.type === 'INCOME' ? 'green' : 'red'}}" />
+  </t-cell>
+</view>

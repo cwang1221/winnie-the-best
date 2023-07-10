@@ -1,0 +1,9 @@
+<view class="container">
+  <t-grid class="three-border" column="{{3}}" style="padding: 2rem">
+    <t-grid-item text="班费" image="/images/money.png" url="/pages/finance/finance"/>
+    <t-grid-item text="等待需求..." image="/images/development.png" />
+  </t-grid>
+  <view class="imageContainer">
+    <image style="width: 280px; height: 300px;" mode="aspectFit" src="/images/winnie.png"></image>
+  </view>
+</view>
